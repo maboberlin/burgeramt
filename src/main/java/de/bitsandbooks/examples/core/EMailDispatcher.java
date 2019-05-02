@@ -42,7 +42,7 @@ public class EMailDispatcher {
         try {
             log.info("Sending message email ...");
 
-            final String messageText = String.format("Hi Lecia,%nEs scheint jetzt Termine auf der Seite vom Amt zu geben!%n%s", link);
+            final String messageText = String.format("Hi,%nEs scheint jetzt Termine auf der Seite vom Amt zu geben!%n%s", link);
 
             final Message msg = new MimeMessage(session);
             msg.setContent(messageText, "text/plain");
