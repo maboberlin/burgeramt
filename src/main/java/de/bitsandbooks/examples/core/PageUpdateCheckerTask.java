@@ -34,14 +34,12 @@ public class PageUpdateCheckerTask implements Runnable {
     }
 
     private void sendInformations() {
-        beep();
         try {
             dispatcher.dispatchEMail();
             // dispatcher.dispatchAttachments();
         } catch (Exception e) {
             log.error("Error sending emails after retry limit exceeded!", e);
         }
-        beep();
     }
 
     private void beep() {

@@ -92,7 +92,7 @@ public class EMailDispatcher {
         msg.setFrom(fromAddress);
         msg.setRecipients(RecipientType.TO, toAddresses);
         msg.setSubject(messageSubject);
-        msg.setText("Hi Katy and Lisa! Something has changed in the calendar for appointments at Standesamt Pankow. Check this URL: " + link);
+        msg.setText("Hi! Something has changed in the calendar for appointments at Standesamt Pankow. Check this URL: " + link);
 
         Transport.send(msg);
     }

@@ -9,7 +9,7 @@ public class PageComparator {
 
     public boolean pagesEqual(final PageData page1, final PageData page2) {
         if (page1 == null || page2 == null) {
-            return false; // for #1 deployment test
+            return false; // change after check
         }
 
         if (page1.getDayWithAtributeMap().size() != page2.getDayWithAtributeMap().size()) {
